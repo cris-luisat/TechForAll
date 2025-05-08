@@ -44,7 +44,7 @@ namespace Teste_tela05
 
                 con.Open();
 
-                string sql = "SELECT * FROM usuarios WHERE email=@email and senha=@senha;";
+                string sql = "SELECT * FROM usuarios WHERE email=@email and senha_hash=@senha;";
                 MySqlCommand cmdTelaInicial = new MySqlCommand(sql, con);
 
                 cmdTelaInicial.Parameters.AddWithValue("@email", usuario);
@@ -54,10 +54,7 @@ namespace Teste_tela05
 
                 con.Close();
 
-                {
-                    MessageBox.Show("Todos os campos são obrigatórios.");
-                    return;
-                }
+               
 
                 // Validação da senha
                 if (senha.Length < 6)
@@ -66,6 +63,8 @@ namespace Teste_tela05
                     return;
                 }
 
+                Menu menu = new Menu();
+                menu.Show();
 
 
                 //// Simulando usuários cadastrados

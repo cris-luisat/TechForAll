@@ -37,6 +37,7 @@
             btnCancelar6 = new Button();
             panel1 = new Panel();
             panel2 = new Panel();
+            button2 = new Button();
             panel3 = new Panel();
             button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -111,6 +112,7 @@
             // panel2
             // 
             panel2.BackColor = Color.White;
+            panel2.Controls.Add(button2);
             panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(btnSalvar);
             panel2.Controls.Add(txtEmail3);
@@ -121,6 +123,15 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(1192, 701);
             panel2.TabIndex = 8;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(317, 102);
+            button2.Name = "button2";
+            button2.Size = new Size(110, 53);
+            button2.TabIndex = 6;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -173,5 +184,6 @@
         private Panel panel2;
         private Panel panel3;
         private Button button1;
+        private Button button2;
     }
 }
