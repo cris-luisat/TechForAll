@@ -1,6 +1,4 @@
-﻿using TechForAll.Models;
-
-namespace Teste_tela05.Views
+﻿namespace Teste_tela05.Views
 {
     partial class Menu
     {
@@ -43,7 +41,7 @@ namespace Teste_tela05.Views
             btnUserSair = new TechForAll.CustomButtom.Botao();
             btnUserConfiguracao = new TechForAll.CustomButtom.Botao();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            pnlArea = new Panel();
+            panel2 = new Panel();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -76,7 +74,7 @@ namespace Teste_tela05.Views
             // btnFechar
             // 
             btnFechar.BackColor = Color.Brown;
-            btnFechar.Font = new Font("Simplex_IV25", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnFechar.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnFechar.ForeColor = SystemColors.ControlLightLight;
             btnFechar.Location = new Point(1116, 12);
             btnFechar.Name = "btnFechar";
@@ -84,15 +82,16 @@ namespace Teste_tela05.Views
             btnFechar.TabIndex = 2;
             btnFechar.Text = "X";
             btnFechar.UseVisualStyleBackColor = false;
+            btnFechar.Click += btnFechar_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("ItalicT", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ControlLightLight;
             label1.Location = new Point(61, 9);
             label1.Name = "label1";
-            label1.Size = new Size(268, 32);
+            label1.Size = new Size(187, 25);
             label1.TabIndex = 1;
             label1.Text = "Delicias da Itália";
             // 
@@ -126,7 +125,7 @@ namespace Teste_tela05.Views
             btnUserCarteira.BackColor = Color.Beige;
             btnUserCarteira.FlatAppearance.BorderSize = 0;
             btnUserCarteira.FlatStyle = FlatStyle.Flat;
-            btnUserCarteira.Font = new Font("ItalicT", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnUserCarteira.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             btnUserCarteira.ForeColor = Color.Black;
             btnUserCarteira.Location = new Point(168, 11);
             btnUserCarteira.Name = "btnUserCarteira";
@@ -141,7 +140,7 @@ namespace Teste_tela05.Views
             btnUserCarrinho.BackColor = Color.Beige;
             btnUserCarrinho.FlatAppearance.BorderSize = 0;
             btnUserCarrinho.FlatStyle = FlatStyle.Flat;
-            btnUserCarrinho.Font = new Font("ItalicT", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnUserCarrinho.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             btnUserCarrinho.ForeColor = Color.Black;
             btnUserCarrinho.Location = new Point(333, 11);
             btnUserCarrinho.Name = "btnUserCarrinho";
@@ -156,7 +155,7 @@ namespace Teste_tela05.Views
             btnUserCardapio.BackColor = Color.Beige;
             btnUserCardapio.FlatAppearance.BorderSize = 0;
             btnUserCardapio.FlatStyle = FlatStyle.Flat;
-            btnUserCardapio.Font = new Font("ItalicT", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnUserCardapio.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             btnUserCardapio.ForeColor = Color.Black;
             btnUserCardapio.Location = new Point(3, 11);
             btnUserCardapio.Name = "btnUserCardapio";
@@ -180,6 +179,7 @@ namespace Teste_tela05.Views
             btnUserSair.TabIndex = 5;
             btnUserSair.TextAlign = ContentAlignment.MiddleLeft;
             btnUserSair.UseVisualStyleBackColor = false;
+            btnUserSair.Click += btnUserSair_Click;
             // 
             // btnUserConfiguracao
             // 
@@ -195,23 +195,24 @@ namespace Teste_tela05.Views
             btnUserConfiguracao.Text = "⚙";
             btnUserConfiguracao.TextAlign = ContentAlignment.MiddleLeft;
             btnUserConfiguracao.UseVisualStyleBackColor = false;
+            btnUserConfiguracao.Click += btnUserConfiguracao_Click;
             // 
-            // pnlArea
+            // panel2
             // 
-            pnlArea.Dock = DockStyle.Fill;
-            pnlArea.Location = new Point(0, 111);
-            pnlArea.Name = "pnlArea";
-            pnlArea.Size = new Size(1163, 512);
-            pnlArea.TabIndex = 0;
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1163, 623);
+            panel2.TabIndex = 4;
             // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1163, 623);
-            Controls.Add(pnlArea);
             Controls.Add(panel1);
             Controls.Add(panel3);
+            Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Menu";
             StartPosition = FormStartPosition.CenterScreen;
@@ -237,6 +238,6 @@ namespace Teste_tela05.Views
         private TechForAll.CustomButtom.Botao btnUserCardapio;
         private TechForAll.CustomButtom.Botao btnUserCarrinho;
         private TechForAll.CustomButtom.Botao btnUserCarteira;
-        //private Panel pnlArea;
+        private Panel panel2;
     }
 }

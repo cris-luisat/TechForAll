@@ -53,39 +53,10 @@ namespace Teste_tela05
                 cmdTelaInicial.ExecuteNonQuery();
 
                 con.Close();
-
-               
-
-                // Validação da senha
-                if (senha.Length < 6)
-                {
-                    MessageBox.Show("A senha deve ter pelo menos 6 caracteres.");
-                    return;
-                }
-
+                                       
                 Menu menu = new Menu();
                 menu.Show();
-
-
-                //// Simulando usuários cadastrados
-                //string usuarioCadastrado = "admin";
-                //string senhaCadastrada = "1234";
-
-                //if (usuario == usuarioCadastrado && senha == senhaCadastrada)
-                //{
-                //    MessageBox.Show("Login realizado com sucesso!");
-                //    // Aqui você pode abrir outro formulário, por exemplo:
-                //    // new TelaPrincipal().Show();
-                //    // this.Hide(); // Esconde o formulário de login
-                //    Menu menu = new Menu();
-                //    menu.Show();
-                //    this.Hide();
-                //}
-                //else
-                //{
-                //    MessageBox.Show("Usuário ou senha inválidos!");
-
-                //}
+                this.Hide();
 
             }
         }

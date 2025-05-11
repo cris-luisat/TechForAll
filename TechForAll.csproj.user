@@ -5,6 +5,9 @@
     <Compile Update="CustomButtom\Botao.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="Models\UCCadastrarCartao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Models\UCCardapio.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -12,6 +15,12 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Models\UCCarteira.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Models\UCConfiguracao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Models\UCMCards.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Views\Adm_Gerente.cs">

@@ -13,13 +13,11 @@ namespace Teste_tela05.Views
 {
     public partial class Menu : Form
     {
-        public static Panel mainPanel;
-        private Panel pnlArea;
-
+        public static Panel MainPanel;
         public Menu()
         {
             InitializeComponent();
-            pnlArea = mainPanel;
+            MainPanel = panel2;
         }
 
         private void botao1_Click(object sender, EventArgs e)
@@ -30,23 +28,52 @@ namespace Teste_tela05.Views
         private void btnUserCardapio_Click(object sender, EventArgs e)
         {
             UCCardapio cardapio = new UCCardapio();
-            mainPanel.Dock = DockStyle.Fill;
-            mainPanel.Controls.Add(cardapio);
-            mainPanel.BringToFront();
-            mainPanel.Show();
-
+            panel2.Controls.Clear();
+            panel2.Controls.Add(cardapio);
+            panel2.Dock = DockStyle.Fill;
+            panel2.BringToFront();
         }
 
         private void btnUserCarteira_Click(object sender, EventArgs e)
         {
             UCCarteira carteira = new UCCarteira();
-            carteira.Show();
+            panel2.Controls.Clear();
+            panel2.Controls.Add(carteira);
+            panel2.Dock = DockStyle.Fill;
+            panel2.BringToFront();
+
         }
 
         private void btnUserCarrinho_Click(object sender, EventArgs e)
         {
             UCCarrinho carrinho = new UCCarrinho();
-            carrinho.Show();
+            panel2.Controls.Clear();
+            panel2.Controls.Add(carrinho);
+            panel2.Dock = DockStyle.Fill;
+            panel2.BringToFront();
+
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnUserSair_Click(object sender, EventArgs e)
+        {
+            TelaInicial telaInicial = new TelaInicial();
+            telaInicial.Show();
+            this.Hide();
+        }
+
+        private void btnUserConfiguracao_Click(object sender, EventArgs e)
+        {
+            UCConfiguracao conf = new UCConfiguracao();
+            panel1.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(conf);
+            panel1.BringToFront();
+            conf.Show();
         }
     }
 }

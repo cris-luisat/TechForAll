@@ -1,4 +1,5 @@
 using Teste_tela05;
+using Teste_tela05.Views;
 
 namespace TechForAll
 {
@@ -13,7 +14,7 @@ namespace TechForAll
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new TelaInicial());
+            Application.Run(new Menu());
         }
     }
 }
