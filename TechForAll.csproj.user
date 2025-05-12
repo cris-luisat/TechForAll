@@ -8,6 +8,9 @@
     <Compile Update="Models\UCCadastrarCartao.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Models\UCCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Models\UCCardapio.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -21,6 +24,12 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Models\UCMCards.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Models\UCProduto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Models\UCProdutoCarrinho.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Views\Adm_Gerente.cs">

@@ -39,14 +39,20 @@
             txtEditEndereco = new TextBox();
             txtEditEmail = new TextBox();
             txtEditNome = new TextBox();
+            botao1 = new TechForAll.CustomButtom.Botao();
+            botao2 = new TechForAll.CustomButtom.Botao();
+            pictureBox1 = new PictureBox();
             panelConf.SuspendLayout();
+            panelConf2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panelConf
             // 
             panelConf.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panelConf.AutoScroll = true;
-            panelConf.BackColor = Color.White;
+            panelConf.BackColor = Color.Wheat;
+            panelConf.Controls.Add(botao1);
             panelConf.Controls.Add(panelConf2);
             panelConf.Controls.Add(label4);
             panelConf.Controls.Add(label3);
@@ -64,6 +70,9 @@
             // 
             // panelConf2
             // 
+            panelConf2.BackColor = Color.Linen;
+            panelConf2.Controls.Add(pictureBox1);
+            panelConf2.Controls.Add(botao2);
             panelConf2.Location = new Point(408, 38);
             panelConf2.Name = "panelConf2";
             panelConf2.Size = new Size(338, 329);
@@ -145,6 +154,40 @@
             txtEditNome.Size = new Size(223, 29);
             txtEditNome.TabIndex = 0;
             // 
+            // botao1
+            // 
+            botao1.BackColor = Color.ForestGreen;
+            botao1.FlatAppearance.BorderSize = 0;
+            botao1.FlatStyle = FlatStyle.Flat;
+            botao1.ForeColor = Color.White;
+            botao1.Location = new Point(157, 387);
+            botao1.Name = "botao1";
+            botao1.Size = new Size(150, 40);
+            botao1.TabIndex = 10;
+            botao1.Text = "Salvar alterações";
+            botao1.UseVisualStyleBackColor = false;
+            // 
+            // botao2
+            // 
+            botao2.BackColor = Color.ForestGreen;
+            botao2.FlatAppearance.BorderSize = 0;
+            botao2.FlatStyle = FlatStyle.Flat;
+            botao2.ForeColor = Color.White;
+            botao2.Location = new Point(104, 273);
+            botao2.Name = "botao2";
+            botao2.Size = new Size(150, 40);
+            botao2.TabIndex = 0;
+            botao2.Text = "Carregar foto";
+            botao2.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(3, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(332, 234);
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            // 
             // UCConfiguracao
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -157,6 +200,8 @@
             Size = new Size(1163, 512);
             panelConf.ResumeLayout(false);
             panelConf.PerformLayout();
+            panelConf2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -172,5 +217,8 @@
         private Label label3;
         private Label label2;
         private Panel panelConf2;
+        private CustomButtom.Botao botao1;
+        private PictureBox pictureBox1;
+        private CustomButtom.Botao botao2;
     }
 }

@@ -16,16 +16,43 @@ namespace TechForAll.Models
         public UCCarteira()
         {
             InitializeComponent();
-            MainPanel = panel1;
+            MainPanel = pnlCarteira;
         }
 
-        private void botao4_Click(object sender, EventArgs e)
+        //private void botao4_Click(object sender, EventArgs e)
+        //{
+        //    var cadcartao = new UCCadastrarCartao();
+        //    panel1.Dock = DockStyle.Fill;
+        //    panel1.Controls.Clear();
+        //    panel1.Controls.Add(cadcartao);
+        //    panel1.BringToFront();
+        //}
+
+        private void botao1_Click(object sender, EventArgs e)
         {
-            var cadcartao = new UCCadastrarCartao();            
-            panel1.Dock = DockStyle.Fill;
-            panel1.Controls.Clear();
-            panel1.Controls.Add(cadcartao);
-            panel1.BringToFront();           
+            var myCards = new UCMCards();
+            pnlCarteira.Dock = DockStyle.Fill;
+            pnlCarteira.Controls.Clear();
+            pnlCarteira.Controls.Add(myCards);
+            pnlCarteira.BringToFront();
+        }
+
+        private void UCCarteira_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void botao3_Click(object sender, EventArgs e)
+        {
+            var saldo = new UCCarrinho();
+            pnlCarteira.Dock = DockStyle.Fill;
+            pnlCarteira.Controls.Clear();
+            pnlCarteira.Controls.Add(saldo);
+        }
+
+        private void pnlCarteira_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

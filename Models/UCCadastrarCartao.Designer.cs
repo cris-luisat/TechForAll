@@ -45,7 +45,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.OrangeRed;
+            panel1.BackColor = Color.Maroon;
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
             panel1.ForeColor = Color.White;
@@ -130,7 +130,7 @@
             // 
             // btnSalvarCard
             // 
-            btnSalvarCard.BackColor = Color.OrangeRed;
+            btnSalvarCard.BackColor = Color.ForestGreen;
             btnSalvarCard.FlatAppearance.BorderSize = 0;
             btnSalvarCard.FlatStyle = FlatStyle.Flat;
             btnSalvarCard.ForeColor = Color.White;

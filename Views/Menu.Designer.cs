@@ -35,6 +35,7 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
+            profilephoto = new PictureBox();
             btnUserCarteira = new TechForAll.CustomButtom.Botao();
             btnUserCarrinho = new TechForAll.CustomButtom.Botao();
             btnUserCardapio = new TechForAll.CustomButtom.Botao();
@@ -45,6 +46,7 @@
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)profilephoto).BeginInit();
             SuspendLayout();
             // 
             // panel3
@@ -109,6 +111,7 @@
             // panel1
             // 
             panel1.BackColor = Color.Red;
+            panel1.Controls.Add(profilephoto);
             panel1.Controls.Add(btnUserCarteira);
             panel1.Controls.Add(btnUserCarrinho);
             panel1.Controls.Add(btnUserCardapio);
@@ -119,6 +122,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1163, 59);
             panel1.TabIndex = 3;
+            // 
+            // profilephoto
+            // 
+            profilephoto.BackColor = Color.White;
+            profilephoto.Location = new Point(981, 6);
+            profilephoto.Name = "profilephoto";
+            profilephoto.Size = new Size(63, 50);
+            profilephoto.SizeMode = PictureBoxSizeMode.Zoom;
+            profilephoto.TabIndex = 9;
+            profilephoto.TabStop = false;
             // 
             // btnUserCarteira
             // 
@@ -200,9 +213,9 @@
             // panel2
             // 
             panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(0, 0);
+            panel2.Location = new Point(0, 111);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1163, 623);
+            panel2.Size = new Size(1163, 512);
             panel2.TabIndex = 4;
             // 
             // Menu
@@ -210,17 +223,19 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1163, 623);
+            Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(panel3);
-            Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Menu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Menu";
+            Load += Menu_Load;
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)profilephoto).EndInit();
             ResumeLayout(false);
         }
 
@@ -239,5 +254,6 @@
         private TechForAll.CustomButtom.Botao btnUserCarrinho;
         private TechForAll.CustomButtom.Botao btnUserCarteira;
         private Panel panel2;
+        private PictureBox profilephoto;
     }
 }

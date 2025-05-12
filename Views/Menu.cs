@@ -70,10 +70,20 @@ namespace Teste_tela05.Views
         {
             UCConfiguracao conf = new UCConfiguracao();
             panel1.Dock = DockStyle.Fill;
-            panel1.Controls.Clear();
+            //panel1.Controls.Clear();
             panel1.Controls.Add(conf);
             panel1.BringToFront();
             conf.Show();
+        }
+        // LOAD
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            UCProduto produto = new UCProduto();
+            panel2.Dock = DockStyle.Fill;
+            panel2.Controls.Clear();
+            panel2.Controls.Add(produto);
+            panel2.BringToFront();
+           
         }
     }
 }
