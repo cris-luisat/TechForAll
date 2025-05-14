@@ -1,6 +1,6 @@
 ![logo da empresa](https://github.com/cris-luisat/Tech-For-All/blob/main/Colorful%20Illustrative%203D%20Robot%20Artificial%20Intelligence%20Logo.png)
 
-#🧠 Tech For All
+## 🧠 Tech For All
 
 ## 🚀Missão:
 Nossa missão é desenvolver soluções tecnológicas inovadoras que atendam às necessidades específicas de nossos clientes, promovendo acessibilidade e inclusão em todos os nossos produtos. 
