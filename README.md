@@ -23,7 +23,7 @@ Colaboração: Trabalhamos em estreita parceria com nossos clientes para entende
 
 ---
 
- ##📁 Estrutura do Projeto
+ ## 📁 Estrutura do Projeto
 TechForAll/
 ├── CustomButtom/ # Componentes personalizados
 ├── Data/ # Lógica de acesso a dados
@@ -34,7 +34,7 @@ TechForAll/
 ├── DiagramaFinal.mwb # Diagrama do banco de dados (MySQL Workbench)
 └── ApresentaçãoCliente.pptx # Apresentação para stakeholders
 
-##🚀 Como Rodar o Projeto
+## 🚀 Como Rodar o Projeto
 
 1.	Clone o repositório: 
 Git clone https://github.com/cris-luisat/TechForAll.git
